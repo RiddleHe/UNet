@@ -4,7 +4,7 @@ A U-Net model capable of segmenting any given image into 30 possible classes of 
 
 ## Technologies
 
-- Implemented transposed convolutions to upsample the previous output so that the spatial features of the original input is retained.
+- Implemented 4 layers of transposed convolutions to upsample the previous output so that the spatial features of the original 96x128 input is retained.
 
 - Added residual connections from downsampling convolutional layers to the transposed convolutional layers to combine textural information with spatial information.
 
@@ -12,4 +12,4 @@ A U-Net model capable of segmenting any given image into 30 possible classes of 
 
 ## Performance
 
-- Trained for 5 epochs on a A100 GPU, decreasing the loss to 0.3909 and increase the accuracy to 0.8852.
+- Trained for 5 epochs on a A100 GPU on 1060 images, decreasing the loss to 0.3909 and increase the accuracy to 0.8852.
